@@ -118,9 +118,6 @@ function closeMenu() {
   menu.classList.remove('open');
 }
 
-// hamburger.addEventListener('click', toggleMenu);
-// menu-nav-item.addEventListener('click', closeMenu);
-
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
@@ -129,7 +126,6 @@ navLinks.forEach((link) => {
   });
 });
 
-//CHANGE PHOTOS 
 
 const portfolioBtnAutumn = document.querySelector('.buttonautumn');
 const portfolioBtnWinter = document.querySelector('.buttonwinter');
@@ -154,25 +150,6 @@ portfolioBtnSummer.addEventListener('click', () => {
   portfolioImages.forEach((img, index) => img.src = `assets/summer/${index + 1}.jpg`);
 });
 
-//ПОДСВЕТКА КНОПКИ 
-
-// const portfolioBtns = document.querySelectorAll('.portfoliobutton');
-
-//  portfolioBtns.forEach(() => {
-//     portfolioBtns.classList.remove('active');
-//   });
-
-// portfolioBtns.addEventListener('click', () => {
-//   portfolioBtns.classList.add('active');
-// });
-
-// portfolioBtns.forEach((button) => {
-//   button.addEventListener('click', () => {
-//     portfolioBtns.classList.add('active');
-//   });
-// });
-
-//КЭШИРОВАНИЕ
 
 const seasons = ['winter', 'spring', 'summer', 'autumn'];
 seasons.forEach (
@@ -186,7 +163,6 @@ seasons.forEach (
 }
 );
 
-//СМЕНА ТЕМЫ
 
 let activeTheme = "dark";
 const theme = document.querySelector(".lightdark");
@@ -246,52 +222,5 @@ function toggleTheme(elements) {
   );
 }
 
-
-
-// const ikonSwitch = document.querySelector('.lightdark');
-// let themeIcon = document.querySelector('.iconsun');
-// let changeStyle = document.querySelectorAll(['.body', '.skills.sun', '.description-text.sun', '.wrapper-section-title.sun', '.section-title.sun','.button-empty.sun', '.button-empty.active.sun', '.title-block-price.sun', '.text-block-price.sun','.portfolio-section.container.sun','.video-section.container.sun','.price-section.container.sun']);
-
-
-// ikonSwitch.addEventListener('click', () => {
-//   changeStyle.forEach((item) => item.classList.toggle('sun'));
-
-//   if (themeIcon.getAttribute("src") === "./assets/moon.svg") {
-//     themeIcon.src = "./assets/carbon_sun.svg";
-//   } else {
-//     themeIcon.src = "./assets/moon.svg";
-//   }
-
-// })
-
-
-
-
-
-// const lightDarkBtn = document.querySelector('.lightdark');
-// const changeThemeElem = ['main','.skills.light-theme', '.portfolio', '.video', '.price','.portfoliobutton'];
-
-// lightDarkBtn.addEventListener('click', changeTheme);
-
-// function changeTheme() {
-//   changeThemeElem.forEach((item) => {
-//       const elem = document.querySelector(item);
-//       elem.classList.toggle('light-theme');
-//   });
-// }
-
-//   changeThemeElem.forEach (
-//     function changeTheme() {
-//       lightDarkBtn.addEventListener('click', () => {
-//         changeThemeElem.classList.add('light-theme');
-//       });
-//     }
-// );
-
-// changeThemeElem.forEach((elem) => {
-//   lightDarkBtn.addEventListener('click', () => {
-//     changeThemeElem.classList.add('light-theme');
-//   });
-// });
 
 
